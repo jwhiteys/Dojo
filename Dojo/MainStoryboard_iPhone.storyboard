@@ -54,7 +54,7 @@
                     <navigationItem key="navigationItem" title="D o j o" id="Ikm-NP-jA4">
                         <barButtonItem key="rightBarButtonItem" image="YinYangButtonSmall.png" id="hN7-oM-5dD">
                             <connections>
-                                <segue destination="Uet-mx-PUk" kind="modal" identifier="AddTaskSegue" modalTransitionStyle="flipHorizontal" id="qno-my-EdK"/>
+                                <segue destination="bdK-uR-vhi" kind="modal" identifier="AddNewTaskFromMainSegue" modalTransitionStyle="flipHorizontal" id="0tp-VQ-eLG"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -65,105 +65,97 @@
             </objects>
             <point key="canvasLocation" x="-232" y="275"/>
         </scene>
-        <scene sceneID="uh8-LV-pQD">
+        <scene sceneID="i7S-aq-xJE">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="bBF-uw-SEn" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <viewController id="Uet-mx-PUk" customClass="DojoAddTaskViewController" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="iwA-2w-gpa">
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Y9c-s2-YUr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="bdK-uR-vhi" customClass="DojoAddTaskViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="JKO-57-tfh">
                         <rect key="frame" x="0.0" y="20" width="320" height="460"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" barStyle="blackTranslucent" id="PCo-Ab-LSk">
-                                <rect key="frame" x="0.0" y="416" width="320" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                                <items>
-                                    <barButtonItem style="plain" systemItem="action" id="sqs-sY-cqz">
-                                        <connections>
-                                            <segue destination="dvv-dk-ahM" kind="modal" identifier="StartTimerSegue" modalTransitionStyle="crossDissolve" id="hKF-Yg-YSS"/>
-                                        </connections>
-                                    </barButtonItem>
-                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="n48-xu-on8"/>
-                                    <barButtonItem style="plain" systemItem="organize" id="nBj-OW-EqQ"/>
-                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="h7v-rZ-zIc"/>
-                                    <barButtonItem style="plain" systemItem="trash" id="8xh-HN-6Mb"/>
-                                </items>
-                            </toolbar>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" lineBreakMode="tailTruncation" minimumFontSize="10" id="FnE-Pj-woe">
-                                <rect key="frame" x="20" y="20" width="42" height="21"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="New Task" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" id="LSu-yC-Cxn">
+                                <rect key="frame" x="111" y="20" width="99" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <switch opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" id="owO-N0-W2A">
-                                <rect key="frame" x="195" y="117" width="79" height="27"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="mlW-aL-Qc6">
+                                <rect key="frame" x="20" y="49" width="280" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="Mal-JF-NHy">
+                                <rect key="frame" x="20" y="88" width="280" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Endurance Mode" lineBreakMode="tailTruncation" minimumFontSize="10" id="BFf-aQ-To5">
+                                <rect key="frame" x="47" y="130" width="140" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" id="Jh7-Tt-m1J">
+                                <rect key="frame" x="195" y="127" width="79" height="27"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="onTintColor" red="0.2704081633" green="0.061095204690000002" blue="0.072839268710000002" alpha="1" colorSpace="calibratedRGB"/>
                             </switch>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Endurance Mode" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="12" id="4fV-H1-yM5">
-                                <rect key="frame" x="47" y="115" width="140" height="32"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Set Goal Time" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" id="31S-Np-YiW">
+                                <rect key="frame" x="97" y="168" width="126" height="24"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Task Name" minimumFontSize="17" id="u0Y-w7-u33">
-                                <rect key="frame" x="20" y="37" width="280" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Summary or Subtitle" minimumFontSize="17" id="WhP-VV-1qS">
-                                <rect key="frame" x="20" y="76" width="280" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Set Goal Time" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" id="suo-ru-MSw">
-                                <rect key="frame" x="81" y="171" width="158" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <pickerView contentMode="scaleToFill" id="msZ-pU-LB1">
+                            <pickerView contentMode="scaleToFill" id="xdy-pp-1RQ">
                                 <rect key="frame" x="0.0" y="200" width="160" height="216"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                             </pickerView>
-                            <pickerView contentMode="scaleToFill" id="ijP-2v-DqF">
-                                <rect key="frame" x="163" y="200" width="157" height="216"/>
+                            <pickerView contentMode="scaleToFill" id="dge-K0-eTD">
+                                <rect key="frame" x="161" y="200" width="160" height="216"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                             </pickerView>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="New Task" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" id="7Fa-i4-goC">
-                                <rect key="frame" x="108" y="8" width="105" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" barStyle="blackTranslucent" id="swD-9Z-0z1">
+                                <rect key="frame" x="0.0" y="416" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem style="plain" systemItem="action" id="rTL-f5-r9y">
+                                        <connections>
+                                            <segue destination="dvv-dk-ahM" kind="modal" modalTransitionStyle="crossDissolve" id="Pvw-xV-76T"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="CP6-WL-us6"/>
+                                    <barButtonItem style="plain" systemItem="action" id="0bV-Eb-W2D"/>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="eNY-Bf-vZp"/>
+                                    <barButtonItem style="plain" systemItem="trash" id="vcj-q4-z2o"/>
+                                </items>
+                            </toolbar>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                     </view>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="blackTranslucent"/>
                     <connections>
-                        <outlet property="cancel" destination="nBj-OW-EqQ" id="e1J-XM-rjf"/>
-                        <outlet property="enduranceModeLabel" destination="4fV-H1-yM5" id="Ceo-sq-RDL"/>
-                        <outlet property="enduranceModeSwitch" destination="owO-N0-W2A" id="ai7-O8-uS2"/>
-                        <outlet property="fileTaskButton" destination="nBj-OW-EqQ" id="IwJ-Cc-cck"/>
-                        <outlet property="flexibleSpacerLeft" destination="n48-xu-on8" id="POx-Et-IYc"/>
-                        <outlet property="flexibleSpacerRight" destination="h7v-rZ-zIc" id="e0X-E0-aXk"/>
-                        <outlet property="hourPicker" destination="msZ-pU-LB1" id="2V5-96-ADD"/>
-                        <outlet property="minutePicker" destination="ijP-2v-DqF" id="Wnr-gp-TuC"/>
-                        <outlet property="startTaskButton" destination="sqs-sY-cqz" id="RaV-mu-uXJ"/>
-                        <outlet property="taskNameTextField" destination="u0Y-w7-u33" id="lM5-GP-Tey"/>
-                        <outlet property="taskSummaryTextField" destination="WhP-VV-1qS" id="dmb-gc-FFo"/>
-                        <outlet property="timePickerLabel" destination="suo-ru-MSw" id="qli-u6-G6C"/>
-                        <outlet property="titleLabel" destination="7Fa-i4-goC" id="PJg-ce-5WR"/>
-                        <outlet property="trashTaskButton" destination="8xh-HN-6Mb" id="2N6-Jn-MJw"/>
+                        <outlet property="enduranceModeLabel" destination="BFf-aQ-To5" id="YH2-yX-1gv"/>
+                        <outlet property="enduranceModeSwitch" destination="Jh7-Tt-m1J" id="wZg-Lo-BU3"/>
+                        <outlet property="fileTaskButton" destination="0bV-Eb-W2D" id="5JH-RG-76P"/>
+                        <outlet property="flexibleSpacerLeft" destination="CP6-WL-us6" id="sho-Gx-w2L"/>
+                        <outlet property="flexibleSpacerRight" destination="eNY-Bf-vZp" id="iN1-lp-MWm"/>
+                        <outlet property="hourPicker" destination="xdy-pp-1RQ" id="nI5-Vf-ryc"/>
+                        <outlet property="minutePicker" destination="dge-K0-eTD" id="GOd-FQ-Iyi"/>
+                        <outlet property="startTaskButton" destination="rTL-f5-r9y" id="rjZ-UC-aEC"/>
+                        <outlet property="taskNameTextField" destination="mlW-aL-Qc6" id="2kw-hc-ttC"/>
+                        <outlet property="taskSummaryTextField" destination="Mal-JF-NHy" id="Sip-3p-zXI"/>
+                        <outlet property="timePickerLabel" destination="31S-Np-YiW" id="0fh-Wd-chV"/>
+                        <outlet property="titleLabel" destination="LSu-yC-Cxn" id="RrZ-af-sl1"/>
+                        <outlet property="trashTaskButton" destination="vcj-q4-z2o" id="tMW-co-v55"/>
                     </connections>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="261" y="-313"/>
+            <point key="canvasLocation" x="274" y="-313"/>
         </scene>
         <scene sceneID="Ssf-Ik-Pbz">
             <objects>
@@ -267,20 +259,6 @@
                     <view key="view" contentMode="scaleToFill" id="QJf-mE-IZN">
                         <rect key="frame" x="0.0" y="20" width="320" height="460"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <subviews>
-                            <view contentMode="scaleToFill" id="0xt-zC-hyy">
-                                <rect key="frame" x="13" y="12" width="295" height="435"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                <subviews>
-                                    <view contentMode="scaleToFill" id="tzk-ug-uee">
-                                        <rect key="frame" x="20" y="20" width="255" height="395"/>
-                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                        <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
-                                    </view>
-                                </subviews>
-                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
-                            </view>
-                        </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="R7z-1o-TwP"/>
@@ -314,48 +292,6 @@
     <resources>
         <image name="YinYangButtonSmall.png" width="25" height="25"/>
     </resources>
-    <classes>
-        <class className="DojoAddTaskViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/DojoAddTaskViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="enduranceModeLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="enduranceModeSwitch" candidateClass="UISwitch"/>
-                <relationship kind="outlet" name="fileTaskButton" candidateClass="UIBarButtonItem"/>
-                <relationship kind="outlet" name="flexibleSpacerLeft" candidateClass="UIBarButtonItem"/>
-                <relationship kind="outlet" name="flexibleSpacerRight" candidateClass="UIBarButtonItem"/>
-                <relationship kind="outlet" name="hourPicker" candidateClass="UIPickerView"/>
-                <relationship kind="outlet" name="minutePicker" candidateClass="UIPickerView"/>
-                <relationship kind="outlet" name="startTaskButton" candidateClass="UIBarButtonItem"/>
-                <relationship kind="outlet" name="taskNameTextField" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="taskSummaryTextField" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="timePickerLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="titleLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="trashTaskButton" candidateClass="UIBarButtonItem"/>
-            </relationships>
-        </class>
-        <class className="DojoDetailViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/DojoDetailViewController.h"/>
-        </class>
-        <class className="DojoMainViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/DojoMainViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="AddNewTaskButton" candidateClass="UIBarButtonItem"/>
-            </relationships>
-        </class>
-        <class className="DojoReflectionViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/DojoReflectionViewController.h"/>
-        </class>
-        <class className="DojoTimerViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/DojoTimerViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="dingButton" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="motivationLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="progressIndicator" candidateClass="UIProgressView"/>
-                <relationship kind="outlet" name="progressIndicatorLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="timerLabel" candidateClass="UILabel"/>
-            </relationships>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
