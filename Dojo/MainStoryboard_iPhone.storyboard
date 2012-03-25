@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="1.0" toolsVersion="1938" systemVersion="11D50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="9WG-Zi-LVz">
+    <dependencies>
+        <development defaultVersion="4200" identifier="xcode"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="933"/>
+    </dependencies>
+    <scenes>
+        <scene sceneID="WYl-TN-uXo">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2QI-BM-FLi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tableViewController id="3dz-fz-set" customClass="DojoMainViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="70" sectionHeaderHeight="30" sectionFooterHeight="30" id="ED4-1I-fBx">
+                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="separatorColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="gray" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="DojoTaskCell" rowHeight="75" id="OTx-66-KEd">
+                                <rect key="frame" x="0.0" y="30" width="320" height="75"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="300" height="74"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                                <connections>
+                                    <segue destination="RFa-qf-hBs" kind="push" identifier="ShowTaskDetailSegue" id="cb5-Rx-fGm"/>
+                                </connections>
+                            </tableViewCell>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="gray" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="DojoGoalCell" rowHeight="75" id="acC-vu-Ghq">
+                                <rect key="frame" x="0.0" y="105" width="320" height="75"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="74"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                            </tableViewCell>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="gray" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="DojoSubjectCell" rowHeight="75" id="b6f-Lo-qvN">
+                                <rect key="frame" x="0.0" y="180" width="320" height="75"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="74"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="3dz-fz-set" id="RjT-bB-gB3"/>
+                            <outlet property="delegate" destination="3dz-fz-set" id="rAy-xW-avr"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="D o j o" id="Ikm-NP-jA4">
+                        <barButtonItem key="rightBarButtonItem" image="YinYangButtonSmall.png" id="hN7-oM-5dD">
+                            <connections>
+                                <segue destination="Uet-mx-PUk" kind="modal" identifier="AddTaskSegue" modalTransitionStyle="flipHorizontal" id="qno-my-EdK"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="AddNewTaskButton" destination="hN7-oM-5dD" id="uKs-dl-CwT"/>
+                    </connections>
+                </tableViewController>
+            </objects>
+            <point key="canvasLocation" x="-232" y="275"/>
+        </scene>
+        <scene sceneID="uh8-LV-pQD">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bBF-uw-SEn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="Uet-mx-PUk" customClass="DojoAddTaskViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="iwA-2w-gpa">
+                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" barStyle="blackTranslucent" id="PCo-Ab-LSk">
+                                <rect key="frame" x="0.0" y="416" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem style="plain" systemItem="action" id="sqs-sY-cqz">
+                                        <connections>
+                                            <segue destination="dvv-dk-ahM" kind="modal" identifier="StartTimerSegue" modalTransitionStyle="crossDissolve" id="hKF-Yg-YSS"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="n48-xu-on8"/>
+                                    <barButtonItem style="plain" systemItem="organize" id="nBj-OW-EqQ"/>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="h7v-rZ-zIc"/>
+                                    <barButtonItem style="plain" systemItem="trash" id="8xh-HN-6Mb"/>
+                                </items>
+                            </toolbar>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" lineBreakMode="tailTruncation" minimumFontSize="10" id="FnE-Pj-woe">
+                                <rect key="frame" x="20" y="20" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" id="owO-N0-W2A">
+                                <rect key="frame" x="195" y="117" width="79" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="onTintColor" red="0.2704081633" green="0.061095204690000002" blue="0.072839268710000002" alpha="1" colorSpace="calibratedRGB"/>
+                            </switch>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Endurance Mode" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="12" id="4fV-H1-yM5">
+                                <rect key="frame" x="47" y="115" width="140" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Task Name" minimumFontSize="17" id="u0Y-w7-u33">
+                                <rect key="frame" x="20" y="37" width="280" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Summary or Subtitle" minimumFontSize="17" id="WhP-VV-1qS">
+                                <rect key="frame" x="20" y="76" width="280" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Set Goal Time" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" id="suo-ru-MSw">
+                                <rect key="frame" x="81" y="171" width="158" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <pickerView contentMode="scaleToFill" id="msZ-pU-LB1">
+                                <rect key="frame" x="0.0" y="200" width="160" height="216"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            </pickerView>
+                            <pickerView contentMode="scaleToFill" id="ijP-2v-DqF">
+                                <rect key="frame" x="163" y="200" width="157" height="216"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            </pickerView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="New Task" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" id="7Fa-i4-goC">
+                                <rect key="frame" x="108" y="8" width="105" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                    </view>
+                    <connections>
+                        <outlet property="cancel" destination="nBj-OW-EqQ" id="e1J-XM-rjf"/>
+                        <outlet property="enduranceModeLabel" destination="4fV-H1-yM5" id="Ceo-sq-RDL"/>
+                        <outlet property="enduranceModeSwitch" destination="owO-N0-W2A" id="ai7-O8-uS2"/>
+                        <outlet property="fileTaskButton" destination="nBj-OW-EqQ" id="IwJ-Cc-cck"/>
+                        <outlet property="flexibleSpacerLeft" destination="n48-xu-on8" id="POx-Et-IYc"/>
+                        <outlet property="flexibleSpacerRight" destination="h7v-rZ-zIc" id="e0X-E0-aXk"/>
+                        <outlet property="hourPicker" destination="msZ-pU-LB1" id="2V5-96-ADD"/>
+                        <outlet property="minutePicker" destination="ijP-2v-DqF" id="Wnr-gp-TuC"/>
+                        <outlet property="startTaskButton" destination="sqs-sY-cqz" id="RaV-mu-uXJ"/>
+                        <outlet property="taskNameTextField" destination="u0Y-w7-u33" id="lM5-GP-Tey"/>
+                        <outlet property="taskSummaryTextField" destination="WhP-VV-1qS" id="dmb-gc-FFo"/>
+                        <outlet property="timePickerLabel" destination="suo-ru-MSw" id="qli-u6-G6C"/>
+                        <outlet property="titleLabel" destination="7Fa-i4-goC" id="PJg-ce-5WR"/>
+                        <outlet property="trashTaskButton" destination="8xh-HN-6Mb" id="2N6-Jn-MJw"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="261" y="-313"/>
+        </scene>
+        <scene sceneID="Ssf-Ik-Pbz">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PUt-CY-Mdu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="dvv-dk-ahM" customClass="DojoTimerViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="YR5-ae-qvO">
+                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" id="5kV-Jx-nUN">
+                                <rect key="frame" x="12" y="12" width="297" height="435"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" id="ZZI-eW-IQc">
+                                        <rect key="frame" x="20" y="20" width="257" height="395"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        <subviews>
+                                            <progressView opaque="NO" contentMode="scaleToFill" progress="0.5" id="eoH-h3-nhs">
+                                                <rect key="frame" x="26" y="357" width="150" height="9"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="progressTintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                <color key="trackTintColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            </progressView>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="0.0%" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" id="ajP-aH-LFc">
+                                                <rect key="frame" x="184" y="349" width="47" height="26"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="00:00:00" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" id="oye-aI-Ijr">
+                                                <rect key="frame" x="26" y="72" width="205" height="164"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="65"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="3Fn-9J-f0n">
+                                                <rect key="frame" x="77" y="244" width="102" height="37"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <size key="titleShadowOffset" width="0.0" height="1"/>
+                                                <state key="normal" title="D I N G">
+                                                    <color key="titleColor" red="0.27040816326530615" green="0.061095204685969559" blue="0.072839268709360319" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="titleShadowColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                </state>
+                                                <state key="highlighted">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                            </button>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Stay focused" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" id="Krl-qd-j9i">
+                                                <rect key="frame" x="26" y="20" width="205" height="44"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                                <color key="shadowColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                    </view>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="blackTranslucent"/>
+                    <connections>
+                        <outlet property="dingButton" destination="3Fn-9J-f0n" id="c5B-Wd-QuK"/>
+                        <outlet property="motivationLabel" destination="Krl-qd-j9i" id="9N3-7y-JHx"/>
+                        <outlet property="progressIndicator" destination="eoH-h3-nhs" id="BuK-qO-ELR"/>
+                        <outlet property="progressIndicatorLabel" destination="ajP-aH-LFc" id="7e0-b8-6Yz"/>
+                        <outlet property="timerLabel" destination="oye-aI-Ijr" id="018-6e-q35"/>
+                        <segue destination="hcU-QG-WVs" kind="modal" identifier="TimerToReflectionSegue" modalTransitionStyle="crossDissolve" id="Q65-pH-Xyb"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="678" y="-313"/>
+        </scene>
+        <scene sceneID="OKg-8p-M71">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bXO-U3-EDL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="RFa-qf-hBs" customClass="DojoDetailViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lAb-FU-xKo">
+                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="WcJ-Kt-m3N"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="261" y="275"/>
+        </scene>
+        <scene sceneID="yqs-lu-9V7">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="u4U-OT-pcS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="hcU-QG-WVs" customClass="DojoReflectionViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="QJf-mE-IZN">
+                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" id="0xt-zC-hyy">
+                                <rect key="frame" x="13" y="12" width="295" height="435"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" id="tzk-ug-uee">
+                                        <rect key="frame" x="20" y="20" width="255" height="395"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="R7z-1o-TwP"/>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="1145" y="-313"/>
+        </scene>
+        <scene sceneID="DXw-zW-ve3">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5bW-Q9-uv3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <navigationController toolbarHidden="NO" id="9WG-Zi-LVz" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="blackTranslucent"/>
+                    <navigationBar key="navigationBar" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" barStyle="blackTranslucent" id="lxB-wL-i8P">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <toolbar key="toolbar" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" barStyle="blackTranslucent" id="WIX-cb-CA5">
+                        <rect key="frame" x="0.0" y="436" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
+                    <connections>
+                        <segue destination="3dz-fz-set" kind="relationship" relationship="rootViewController" id="4Py-eV-3X7"/>
+                    </connections>
+                </navigationController>
+            </objects>
+            <point key="canvasLocation" x="-758" y="275"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="YinYangButtonSmall.png" width="25" height="25"/>
+    </resources>
+    <classes>
+        <class className="DojoAddTaskViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/DojoAddTaskViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="enduranceModeLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="enduranceModeSwitch" candidateClass="UISwitch"/>
+                <relationship kind="outlet" name="fileTaskButton" candidateClass="UIBarButtonItem"/>
+                <relationship kind="outlet" name="flexibleSpacerLeft" candidateClass="UIBarButtonItem"/>
+                <relationship kind="outlet" name="flexibleSpacerRight" candidateClass="UIBarButtonItem"/>
+                <relationship kind="outlet" name="hourPicker" candidateClass="UIPickerView"/>
+                <relationship kind="outlet" name="minutePicker" candidateClass="UIPickerView"/>
+                <relationship kind="outlet" name="startTaskButton" candidateClass="UIBarButtonItem"/>
+                <relationship kind="outlet" name="taskNameTextField" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="taskSummaryTextField" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="timePickerLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="titleLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="trashTaskButton" candidateClass="UIBarButtonItem"/>
+            </relationships>
+        </class>
+        <class className="DojoDetailViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/DojoDetailViewController.h"/>
+        </class>
+        <class className="DojoMainViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/DojoMainViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="AddNewTaskButton" candidateClass="UIBarButtonItem"/>
+            </relationships>
+        </class>
+        <class className="DojoReflectionViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/DojoReflectionViewController.h"/>
+        </class>
+        <class className="DojoTimerViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/DojoTimerViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="dingButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="motivationLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="progressIndicator" candidateClass="UIProgressView"/>
+                <relationship kind="outlet" name="progressIndicatorLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="timerLabel" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+    </classes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+</document>

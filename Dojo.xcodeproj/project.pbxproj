@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DC44D29E151EBE9200C8EF16 /* DojoAddTaskViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC44D29D151EBE9200C8EF16 /* DojoAddTaskViewController.m */; };
+		DC71972E151D030A000E866A /* DojoChartManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DC71972D151D030A000E866A /* DojoChartManager.m */; };
+		DC741B13151CA83D000807D3 /* DojoEntryManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DC741B12151CA83D000807D3 /* DojoEntryManager.m */; };
+		DC741B1E151CB25E000807D3 /* YinYangButtonSmall.png in Resources */ = {isa = PBXBuildFile; fileRef = DC741B1D151CB25E000807D3 /* YinYangButtonSmall.png */; };
+		DC741B27151CBD71000807D3 /* YinYangButtonSmall.png in Resources */ = {isa = PBXBuildFile; fileRef = DC741B25151CBD71000807D3 /* YinYangButtonSmall.png */; };
+		DC741B28151CBD71000807D3 /* YinYangButtonSmall@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DC741B26151CBD71000807D3 /* YinYangButtonSmall@2x.png */; };
+		DC741B33151CC686000807D3 /* TimerButton.png in Resources */ = {isa = PBXBuildFile; fileRef = DC741B31151CC686000807D3 /* TimerButton.png */; };
+		DC741B34151CC686000807D3 /* TimerButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DC741B32151CC686000807D3 /* TimerButton@2x.png */; };
 		DCAFD317151B9BE700C23F2C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCAFD316151B9BE700C23F2C /* UIKit.framework */; };
 		DCAFD319151B9BE700C23F2C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCAFD318151B9BE700C23F2C /* Foundation.framework */; };
 		DCAFD31B151B9BE700C23F2C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCAFD31A151B9BE700C23F2C /* CoreGraphics.framework */; };
@@ -15,21 +23,66 @@
 		DCAFD325151B9BE700C23F2C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DCAFD324151B9BE700C23F2C /* main.m */; };
 		DCAFD329151B9BE700C23F2C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DCAFD328151B9BE700C23F2C /* AppDelegate.m */; };
 		DCAFD32C151B9BE700C23F2C /* Dojo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DCAFD32A151B9BE700C23F2C /* Dojo.xcdatamodeld */; };
+		DCAFD337151B9C5500C23F2C /* DojoMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DCAFD336151B9C5500C23F2C /* DojoMainViewController.m */; };
+		DCAFD33A151B9C7A00C23F2C /* DojoTimerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DCAFD339151B9C7A00C23F2C /* DojoTimerViewController.m */; };
+		DCAFD341151B9D2200C23F2C /* DojoReflectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DCAFD340151B9D2200C23F2C /* DojoReflectionViewController.m */; };
+		DCAFD344151B9D3700C23F2C /* DojoDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DCAFD343151B9D3700C23F2C /* DojoDetailViewController.m */; };
+		DCAFD349151B9DF400C23F2C /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCAFD348151B9DF400C23F2C /* MainStoryboard_iPhone.storyboard */; };
+		DCAFD34B151B9E0800C23F2C /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCAFD34A151B9E0800C23F2C /* MainStoryboard_iPad.storyboard */; };
+		DCAFD34E151BA21D00C23F2C /* Subject.m in Sources */ = {isa = PBXBuildFile; fileRef = DCAFD34D151BA21D00C23F2C /* Subject.m */; };
+		DCAFD351151BA22C00C23F2C /* Goal.m in Sources */ = {isa = PBXBuildFile; fileRef = DCAFD350151BA22C00C23F2C /* Goal.m */; };
+		DCAFD354151BA24400C23F2C /* AbstractTask.m in Sources */ = {isa = PBXBuildFile; fileRef = DCAFD353151BA24400C23F2C /* AbstractTask.m */; };
+		DCAFD357151BA27D00C23F2C /* AbstractEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = DCAFD356151BA27D00C23F2C /* AbstractEntry.m */; };
+		DCAFD35A151BA2C800C23F2C /* EnduranceTask.m in Sources */ = {isa = PBXBuildFile; fileRef = DCAFD359151BA2C800C23F2C /* EnduranceTask.m */; };
+		DCAFD35D151BA2EC00C23F2C /* TrainingTask.m in Sources */ = {isa = PBXBuildFile; fileRef = DCAFD35C151BA2EB00C23F2C /* TrainingTask.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DC44D29C151EBE9200C8EF16 /* DojoAddTaskViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DojoAddTaskViewController.h; sourceTree = SOURCE_ROOT; };
+		DC44D29D151EBE9200C8EF16 /* DojoAddTaskViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DojoAddTaskViewController.m; sourceTree = SOURCE_ROOT; };
+		DC71972C151D030A000E866A /* DojoChartManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DojoChartManager.h; sourceTree = "<group>"; };
+		DC71972D151D030A000E866A /* DojoChartManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DojoChartManager.m; sourceTree = "<group>"; };
+		DC741B11151CA83D000807D3 /* DojoEntryManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DojoEntryManager.h; sourceTree = "<group>"; };
+		DC741B12151CA83D000807D3 /* DojoEntryManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DojoEntryManager.m; sourceTree = "<group>"; };
+		DC741B1D151CB25E000807D3 /* YinYangButtonSmall.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = YinYangButtonSmall.png; path = ../../YinYangButtonSmall.png; sourceTree = "<group>"; };
+		DC741B25151CBD71000807D3 /* YinYangButtonSmall.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = YinYangButtonSmall.png; path = ../../YinYangButtonSmall.png; sourceTree = "<group>"; };
+		DC741B26151CBD71000807D3 /* YinYangButtonSmall@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "YinYangButtonSmall@2x.png"; path = "../../YinYangButtonSmall@2x.png"; sourceTree = "<group>"; };
+		DC741B31151CC686000807D3 /* TimerButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = TimerButton.png; path = ../../TimerButton.png; sourceTree = "<group>"; };
+		DC741B32151CC686000807D3 /* TimerButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "TimerButton@2x.png"; path = "../../TimerButton@2x.png"; sourceTree = "<group>"; };
 		DCAFD312151B9BE700C23F2C /* Dojo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dojo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCAFD316151B9BE700C23F2C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		DCAFD318151B9BE700C23F2C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		DCAFD31A151B9BE700C23F2C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		DCAFD31C151B9BE700C23F2C /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
-		DCAFD320151B9BE700C23F2C /* Dojo-Info.plist */ = {isa = PBXFileReference; path = "Dojo-Info.plist"; sourceTree = "<group>"; };
+		DCAFD320151B9BE700C23F2C /* Dojo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Dojo-Info.plist"; sourceTree = "<group>"; };
 		DCAFD322151B9BE700C23F2C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		DCAFD324151B9BE700C23F2C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		DCAFD326151B9BE700C23F2C /* Dojo-Prefix.pch */ = {isa = PBXFileReference; path = "Dojo-Prefix.pch"; sourceTree = "<group>"; };
-		DCAFD327151B9BE700C23F2C /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		DCAFD326151B9BE700C23F2C /* Dojo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Dojo-Prefix.pch"; sourceTree = "<group>"; };
+		DCAFD327151B9BE700C23F2C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		DCAFD328151B9BE700C23F2C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		DCAFD32B151B9BE700C23F2C /* Dojo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Dojo.xcdatamodel; sourceTree = "<group>"; };
+		DCAFD335151B9C5500C23F2C /* DojoMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DojoMainViewController.h; sourceTree = "<group>"; };
+		DCAFD336151B9C5500C23F2C /* DojoMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DojoMainViewController.m; sourceTree = "<group>"; };
+		DCAFD338151B9C7A00C23F2C /* DojoTimerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DojoTimerViewController.h; sourceTree = "<group>"; };
+		DCAFD339151B9C7A00C23F2C /* DojoTimerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DojoTimerViewController.m; sourceTree = "<group>"; };
+		DCAFD33F151B9D2200C23F2C /* DojoReflectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DojoReflectionViewController.h; sourceTree = "<group>"; };
+		DCAFD340151B9D2200C23F2C /* DojoReflectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DojoReflectionViewController.m; sourceTree = "<group>"; };
+		DCAFD342151B9D3700C23F2C /* DojoDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DojoDetailViewController.h; sourceTree = "<group>"; };
+		DCAFD343151B9D3700C23F2C /* DojoDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DojoDetailViewController.m; sourceTree = "<group>"; };
+		DCAFD348151B9DF400C23F2C /* MainStoryboard_iPhone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
+		DCAFD34A151B9E0800C23F2C /* MainStoryboard_iPad.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
+		DCAFD34C151BA21D00C23F2C /* Subject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Subject.h; sourceTree = "<group>"; };
+		DCAFD34D151BA21D00C23F2C /* Subject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Subject.m; sourceTree = "<group>"; };
+		DCAFD34F151BA22C00C23F2C /* Goal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Goal.h; sourceTree = "<group>"; };
+		DCAFD350151BA22C00C23F2C /* Goal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Goal.m; sourceTree = "<group>"; };
+		DCAFD352151BA24400C23F2C /* AbstractTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AbstractTask.h; sourceTree = "<group>"; };
+		DCAFD353151BA24400C23F2C /* AbstractTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AbstractTask.m; sourceTree = "<group>"; };
+		DCAFD355151BA27D00C23F2C /* AbstractEntry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AbstractEntry.h; sourceTree = "<group>"; };
+		DCAFD356151BA27D00C23F2C /* AbstractEntry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AbstractEntry.m; sourceTree = "<group>"; };
+		DCAFD358151BA2C800C23F2C /* EnduranceTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EnduranceTask.h; sourceTree = "<group>"; };
+		DCAFD359151BA2C800C23F2C /* EnduranceTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EnduranceTask.m; sourceTree = "<group>"; };
+		DCAFD35B151BA2EB00C23F2C /* TrainingTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TrainingTask.h; sourceTree = "<group>"; };
+		DCAFD35C151BA2EB00C23F2C /* TrainingTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrainingTask.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +100,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DC741B1A151CB039000807D3 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				DC741B31151CC686000807D3 /* TimerButton.png */,
+				DC741B32151CC686000807D3 /* TimerButton@2x.png */,
+				DC741B25151CBD71000807D3 /* YinYangButtonSmall.png */,
+				DC741B26151CBD71000807D3 /* YinYangButtonSmall@2x.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
 		DCAFD307151B9BE700C23F2C = {
 			isa = PBXGroup;
 			children = (
@@ -78,9 +142,9 @@
 		DCAFD31E151B9BE700C23F2C /* Dojo */ = {
 			isa = PBXGroup;
 			children = (
-				DCAFD327151B9BE700C23F2C /* AppDelegate.h */,
-				DCAFD328151B9BE700C23F2C /* AppDelegate.m */,
-				DCAFD32A151B9BE700C23F2C /* Dojo.xcdatamodeld */,
+				DCAFD334151B9BFC00C23F2C /* Views */,
+				DCAFD333151B9BF800C23F2C /* Controllers */,
+				DCAFD332151B9BF500C23F2C /* Models */,
 				DCAFD31F151B9BE700C23F2C /* Supporting Files */,
 			);
 			path = Dojo;
@@ -89,12 +153,66 @@
 		DCAFD31F151B9BE700C23F2C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				DC741B1D151CB25E000807D3 /* YinYangButtonSmall.png */,
+				DC741B1A151CB039000807D3 /* Images */,
 				DCAFD320151B9BE700C23F2C /* Dojo-Info.plist */,
 				DCAFD321151B9BE700C23F2C /* InfoPlist.strings */,
 				DCAFD324151B9BE700C23F2C /* main.m */,
 				DCAFD326151B9BE700C23F2C /* Dojo-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DCAFD332151B9BF500C23F2C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DCAFD32A151B9BE700C23F2C /* Dojo.xcdatamodeld */,
+				DC741B11151CA83D000807D3 /* DojoEntryManager.h */,
+				DC741B12151CA83D000807D3 /* DojoEntryManager.m */,
+				DC71972C151D030A000E866A /* DojoChartManager.h */,
+				DC71972D151D030A000E866A /* DojoChartManager.m */,
+				DCAFD355151BA27D00C23F2C /* AbstractEntry.h */,
+				DCAFD356151BA27D00C23F2C /* AbstractEntry.m */,
+				DCAFD352151BA24400C23F2C /* AbstractTask.h */,
+				DCAFD353151BA24400C23F2C /* AbstractTask.m */,
+				DCAFD35B151BA2EB00C23F2C /* TrainingTask.h */,
+				DCAFD35C151BA2EB00C23F2C /* TrainingTask.m */,
+				DCAFD358151BA2C800C23F2C /* EnduranceTask.h */,
+				DCAFD359151BA2C800C23F2C /* EnduranceTask.m */,
+				DCAFD34F151BA22C00C23F2C /* Goal.h */,
+				DCAFD350151BA22C00C23F2C /* Goal.m */,
+				DCAFD34C151BA21D00C23F2C /* Subject.h */,
+				DCAFD34D151BA21D00C23F2C /* Subject.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		DCAFD333151B9BF800C23F2C /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				DCAFD327151B9BE700C23F2C /* AppDelegate.h */,
+				DCAFD328151B9BE700C23F2C /* AppDelegate.m */,
+				DCAFD335151B9C5500C23F2C /* DojoMainViewController.h */,
+				DCAFD336151B9C5500C23F2C /* DojoMainViewController.m */,
+				DCAFD342151B9D3700C23F2C /* DojoDetailViewController.h */,
+				DCAFD343151B9D3700C23F2C /* DojoDetailViewController.m */,
+				DC44D29C151EBE9200C8EF16 /* DojoAddTaskViewController.h */,
+				DC44D29D151EBE9200C8EF16 /* DojoAddTaskViewController.m */,
+				DCAFD338151B9C7A00C23F2C /* DojoTimerViewController.h */,
+				DCAFD339151B9C7A00C23F2C /* DojoTimerViewController.m */,
+				DCAFD33F151B9D2200C23F2C /* DojoReflectionViewController.h */,
+				DCAFD340151B9D2200C23F2C /* DojoReflectionViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		DCAFD334151B9BFC00C23F2C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DCAFD348151B9DF400C23F2C /* MainStoryboard_iPhone.storyboard */,
+				DCAFD34A151B9E0800C23F2C /* MainStoryboard_iPad.storyboard */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,6 +266,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				DCAFD323151B9BE700C23F2C /* InfoPlist.strings in Resources */,
+				DCAFD349151B9DF400C23F2C /* MainStoryboard_iPhone.storyboard in Resources */,
+				DCAFD34B151B9E0800C23F2C /* MainStoryboard_iPad.storyboard in Resources */,
+				DC741B1E151CB25E000807D3 /* YinYangButtonSmall.png in Resources */,
+				DC741B27151CBD71000807D3 /* YinYangButtonSmall.png in Resources */,
+				DC741B28151CBD71000807D3 /* YinYangButtonSmall@2x.png in Resources */,
+				DC741B33151CC686000807D3 /* TimerButton.png in Resources */,
+				DC741B34151CC686000807D3 /* TimerButton@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -161,6 +286,19 @@
 				DCAFD325151B9BE700C23F2C /* main.m in Sources */,
 				DCAFD329151B9BE700C23F2C /* AppDelegate.m in Sources */,
 				DCAFD32C151B9BE700C23F2C /* Dojo.xcdatamodeld in Sources */,
+				DCAFD337151B9C5500C23F2C /* DojoMainViewController.m in Sources */,
+				DCAFD33A151B9C7A00C23F2C /* DojoTimerViewController.m in Sources */,
+				DCAFD341151B9D2200C23F2C /* DojoReflectionViewController.m in Sources */,
+				DCAFD344151B9D3700C23F2C /* DojoDetailViewController.m in Sources */,
+				DCAFD34E151BA21D00C23F2C /* Subject.m in Sources */,
+				DCAFD351151BA22C00C23F2C /* Goal.m in Sources */,
+				DCAFD354151BA24400C23F2C /* AbstractTask.m in Sources */,
+				DCAFD357151BA27D00C23F2C /* AbstractEntry.m in Sources */,
+				DCAFD35A151BA2C800C23F2C /* EnduranceTask.m in Sources */,
+				DCAFD35D151BA2EC00C23F2C /* TrainingTask.m in Sources */,
+				DC741B13151CA83D000807D3 /* DojoEntryManager.m in Sources */,
+				DC71972E151D030A000E866A /* DojoChartManager.m in Sources */,
+				DC44D29E151EBE9200C8EF16 /* DojoAddTaskViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,6 +404,7 @@
 				DCAFD331151B9BE700C23F2C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
