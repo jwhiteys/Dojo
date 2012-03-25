@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DC44D29E151EBE9200C8EF16 /* DojoAddTaskViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC44D29D151EBE9200C8EF16 /* DojoAddTaskViewController.m */; };
+		DC44D2E1151ED71F00C8EF16 /* DojoAddTaskViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC44D2E0151ED71F00C8EF16 /* DojoAddTaskViewController.m */; };
 		DC71972E151D030A000E866A /* DojoChartManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DC71972D151D030A000E866A /* DojoChartManager.m */; };
 		DC741B13151CA83D000807D3 /* DojoEntryManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DC741B12151CA83D000807D3 /* DojoEntryManager.m */; };
 		DC741B1E151CB25E000807D3 /* YinYangButtonSmall.png in Resources */ = {isa = PBXBuildFile; fileRef = DC741B1D151CB25E000807D3 /* YinYangButtonSmall.png */; };
@@ -38,8 +38,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		DC44D29C151EBE9200C8EF16 /* DojoAddTaskViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DojoAddTaskViewController.h; sourceTree = SOURCE_ROOT; };
-		DC44D29D151EBE9200C8EF16 /* DojoAddTaskViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DojoAddTaskViewController.m; sourceTree = SOURCE_ROOT; };
+		DC44D2DF151ED71F00C8EF16 /* DojoAddTaskViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DojoAddTaskViewController.h; sourceTree = "<group>"; };
+		DC44D2E0151ED71F00C8EF16 /* DojoAddTaskViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DojoAddTaskViewController.m; sourceTree = "<group>"; };
 		DC71972C151D030A000E866A /* DojoChartManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DojoChartManager.h; sourceTree = "<group>"; };
 		DC71972D151D030A000E866A /* DojoChartManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DojoChartManager.m; sourceTree = "<group>"; };
 		DC741B11151CA83D000807D3 /* DojoEntryManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DojoEntryManager.h; sourceTree = "<group>"; };
@@ -196,8 +196,8 @@
 				DCAFD336151B9C5500C23F2C /* DojoMainViewController.m */,
 				DCAFD342151B9D3700C23F2C /* DojoDetailViewController.h */,
 				DCAFD343151B9D3700C23F2C /* DojoDetailViewController.m */,
-				DC44D29C151EBE9200C8EF16 /* DojoAddTaskViewController.h */,
-				DC44D29D151EBE9200C8EF16 /* DojoAddTaskViewController.m */,
+				DC44D2DF151ED71F00C8EF16 /* DojoAddTaskViewController.h */,
+				DC44D2E0151ED71F00C8EF16 /* DojoAddTaskViewController.m */,
 				DCAFD338151B9C7A00C23F2C /* DojoTimerViewController.h */,
 				DCAFD339151B9C7A00C23F2C /* DojoTimerViewController.m */,
 				DCAFD33F151B9D2200C23F2C /* DojoReflectionViewController.h */,
@@ -298,7 +298,7 @@
 				DCAFD35D151BA2EC00C23F2C /* TrainingTask.m in Sources */,
 				DC741B13151CA83D000807D3 /* DojoEntryManager.m in Sources */,
 				DC71972E151D030A000E866A /* DojoChartManager.m in Sources */,
-				DC44D29E151EBE9200C8EF16 /* DojoAddTaskViewController.m in Sources */,
+				DC44D2E1151ED71F00C8EF16 /* DojoAddTaskViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

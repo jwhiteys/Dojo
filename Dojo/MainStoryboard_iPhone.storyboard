@@ -54,7 +54,7 @@
                     <navigationItem key="navigationItem" title="D o j o" id="Ikm-NP-jA4">
                         <barButtonItem key="rightBarButtonItem" image="YinYangButtonSmall.png" id="hN7-oM-5dD">
                             <connections>
-                                <segue destination="bdK-uR-vhi" kind="modal" identifier="AddNewTaskFromMainSegue" modalTransitionStyle="flipHorizontal" id="0tp-VQ-eLG"/>
+                                <segue destination="bdK-uR-vhi" kind="modal" identifier="AddTaskFromMain" modalTransitionStyle="flipHorizontal" id="Uz9-TU-agh"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -125,7 +125,7 @@
                                 <items>
                                     <barButtonItem style="plain" systemItem="action" id="rTL-f5-r9y">
                                         <connections>
-                                            <segue destination="dvv-dk-ahM" kind="modal" modalTransitionStyle="crossDissolve" id="Pvw-xV-76T"/>
+                                            <segue destination="dvv-dk-ahM" kind="modal" identifier="StartTimerFromAddTask" modalTransitionStyle="crossDissolve" id="Pvw-xV-76T"/>
                                         </connections>
                                     </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="CP6-WL-us6"/>
@@ -139,16 +139,16 @@
                     </view>
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="blackTranslucent"/>
                     <connections>
-                        <outlet property="enduranceModeLabel" destination="BFf-aQ-To5" id="YH2-yX-1gv"/>
-                        <outlet property="enduranceModeSwitch" destination="Jh7-Tt-m1J" id="wZg-Lo-BU3"/>
-                        <outlet property="fileTaskButton" destination="0bV-Eb-W2D" id="5JH-RG-76P"/>
-                        <outlet property="flexibleSpacerLeft" destination="CP6-WL-us6" id="sho-Gx-w2L"/>
-                        <outlet property="flexibleSpacerRight" destination="eNY-Bf-vZp" id="iN1-lp-MWm"/>
-                        <outlet property="hourPicker" destination="xdy-pp-1RQ" id="nI5-Vf-ryc"/>
-                        <outlet property="minutePicker" destination="dge-K0-eTD" id="GOd-FQ-Iyi"/>
-                        <outlet property="startTaskButton" destination="rTL-f5-r9y" id="rjZ-UC-aEC"/>
-                        <outlet property="taskNameTextField" destination="mlW-aL-Qc6" id="2kw-hc-ttC"/>
-                        <outlet property="taskSummaryTextField" destination="Mal-JF-NHy" id="Sip-3p-zXI"/>
+                        <outlet property="enduranceModeLabel" destination="BFf-aQ-To5" id="CLt-8J-im4"/>
+                        <outlet property="enduranceModeSwitch" destination="Jh7-Tt-m1J" id="GlM-bz-LAa"/>
+                        <outlet property="fileTaskButton" destination="0bV-Eb-W2D" id="20G-eb-noe"/>
+                        <outlet property="flexibleSpacerLeft" destination="CP6-WL-us6" id="Lnx-BD-cGa"/>
+                        <outlet property="flexibleSpacerRight" destination="eNY-Bf-vZp" id="QXO-vF-bAQ"/>
+                        <outlet property="hourPicker" destination="xdy-pp-1RQ" id="Rfk-wV-wKX"/>
+                        <outlet property="minutePicker" destination="dge-K0-eTD" id="OiH-hX-GvV"/>
+                        <outlet property="startTaskButton" destination="rTL-f5-r9y" id="Tb1-El-sQv"/>
+                        <outlet property="taskNameTextField" destination="mlW-aL-Qc6" id="3G8-up-lqf"/>
+                        <outlet property="taskSummaryTextField" destination="Mal-JF-NHy" id="kUf-O7-wZb"/>
                         <outlet property="timePickerLabel" destination="31S-Np-YiW" id="0fh-Wd-chV"/>
                         <outlet property="titleLabel" destination="LSu-yC-Cxn" id="RrZ-af-sl1"/>
                         <outlet property="trashTaskButton" destination="vcj-q4-z2o" id="tMW-co-v55"/>
@@ -231,7 +231,7 @@
                         <outlet property="progressIndicator" destination="eoH-h3-nhs" id="BuK-qO-ELR"/>
                         <outlet property="progressIndicatorLabel" destination="ajP-aH-LFc" id="7e0-b8-6Yz"/>
                         <outlet property="timerLabel" destination="oye-aI-Ijr" id="018-6e-q35"/>
-                        <segue destination="hcU-QG-WVs" kind="modal" identifier="TimerToReflectionSegue" modalTransitionStyle="crossDissolve" id="Q65-pH-Xyb"/>
+                        <segue destination="hcU-QG-WVs" kind="modal" identifier="TimerToReflection" modalTransitionStyle="crossDissolve" id="Q65-pH-Xyb"/>
                     </connections>
                 </viewController>
             </objects>
@@ -292,6 +292,48 @@
     <resources>
         <image name="YinYangButtonSmall.png" width="25" height="25"/>
     </resources>
+    <classes>
+        <class className="DojoAddTaskViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/DojoAddTaskViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="enduranceModeLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="enduranceModeSwitch" candidateClass="UISwitch"/>
+                <relationship kind="outlet" name="fileTaskButton" candidateClass="UIBarButtonItem"/>
+                <relationship kind="outlet" name="flexibleSpacerLeft" candidateClass="UIBarButtonItem"/>
+                <relationship kind="outlet" name="flexibleSpacerRight" candidateClass="UIBarButtonItem"/>
+                <relationship kind="outlet" name="hourPicker" candidateClass="UIPickerView"/>
+                <relationship kind="outlet" name="minutePicker" candidateClass="UIPickerView"/>
+                <relationship kind="outlet" name="startTaskButton" candidateClass="UIBarButtonItem"/>
+                <relationship kind="outlet" name="taskNameTextField" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="taskSummaryTextField" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="timePickerLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="titleLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="trashTaskButton" candidateClass="UIBarButtonItem"/>
+            </relationships>
+        </class>
+        <class className="DojoDetailViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/DojoDetailViewController.h"/>
+        </class>
+        <class className="DojoMainViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/DojoMainViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="AddNewTaskButton" candidateClass="UIBarButtonItem"/>
+            </relationships>
+        </class>
+        <class className="DojoReflectionViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/DojoReflectionViewController.h"/>
+        </class>
+        <class className="DojoTimerViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/DojoTimerViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="dingButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="motivationLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="progressIndicator" candidateClass="UIProgressView"/>
+                <relationship kind="outlet" name="progressIndicatorLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="timerLabel" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
